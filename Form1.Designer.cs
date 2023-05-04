@@ -1,7 +1,7 @@
 ﻿
 namespace sharpculator
 {
-    partial class form
+    partial class xY
     {
         /// <summary>
         /// Required designer variable.
@@ -48,6 +48,9 @@ namespace sharpculator
             this.tbx1 = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.n7 = new System.Windows.Forms.Button();
+            this.xSqr = new System.Windows.Forms.Button();
+            this.xYmltp = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // n1
@@ -146,6 +149,7 @@ namespace sharpculator
             this.btnSubs.TabStop = false;
             this.btnSubs.Text = "-";
             this.btnSubs.UseVisualStyleBackColor = true;
+            this.btnSubs.Click += new System.EventHandler(this.btnSubs_Click);
             // 
             // n8
             // 
@@ -187,6 +191,7 @@ namespace sharpculator
             this.btnAdd.TabStop = false;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // n0
             // 
@@ -226,6 +231,7 @@ namespace sharpculator
             this.btnEqual.TabStop = false;
             this.btnEqual.Text = "=";
             this.btnEqual.UseVisualStyleBackColor = true;
+            this.btnEqual.Click += new System.EventHandler(this.btnEqual_Click_1);
             // 
             // n4
             // 
@@ -304,11 +310,46 @@ namespace sharpculator
             this.n7.UseVisualStyleBackColor = true;
             this.n7.Click += new System.EventHandler(this.n7_Click);
             // 
-            // form
+            // xSqr
+            // 
+            this.xSqr.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xSqr.Location = new System.Drawing.Point(152, 210);
+            this.xSqr.Name = "xSqr";
+            this.xSqr.Size = new System.Drawing.Size(58, 38);
+            this.xSqr.TabIndex = 2;
+            this.xSqr.Text = " x²";
+            this.xSqr.UseVisualStyleBackColor = true;
+            this.xSqr.Click += new System.EventHandler(this.xSqr_Click);
+            // 
+            // xYmltp
+            // 
+            this.xYmltp.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.xYmltp.Location = new System.Drawing.Point(88, 210);
+            this.xYmltp.Name = "xYmltp";
+            this.xYmltp.Size = new System.Drawing.Size(58, 38);
+            this.xYmltp.TabIndex = 3;
+            this.xYmltp.Text = "xʸ";
+            this.xYmltp.UseVisualStyleBackColor = true;
+            this.xYmltp.Click += new System.EventHandler(this.xYmltp_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Location = new System.Drawing.Point(24, 210);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(58, 38);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "        n\r\n     y\r\nX\r\n";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // xY
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(853, 621);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.xYmltp);
+            this.Controls.Add(this.xSqr);
             this.Controls.Add(this.tbx1);
             this.Controls.Add(this.btnEqual);
             this.Controls.Add(this.btnAdd);
@@ -328,7 +369,7 @@ namespace sharpculator
             this.Controls.Add(this.n4);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.n1);
-            this.Name = "form";
+            this.Name = "xY";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -357,6 +398,9 @@ namespace sharpculator
         private System.Windows.Forms.TextBox tbx1;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button n7;
+        private System.Windows.Forms.Button xSqr;
+        private System.Windows.Forms.Button xYmltp;
+        private System.Windows.Forms.Button button1;
     }
 }
 
