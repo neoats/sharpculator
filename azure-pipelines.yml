@@ -5,10 +5,16 @@
 
 trigger:
 - master
-
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
 pool:
   vmImage: 'windows-latest'
-
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
 variables:
   solution: '**/*.sln'
   buildPlatform: 'x86|x64|ARM'
